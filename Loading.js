@@ -1,26 +1,27 @@
 import React from "react";
-import { StyleSheet, Text, View, StatusBar } from "react-native";
+import { StyleSheet, Text, View, StatusBar, Image } from "react-native";
 
 export default function Loading() {
-    return (
+  return (
     <View style={styles.container}>
-        <StatusBar barStyle="dark-content"/>   
-        <Text style={styles.text}>날씨를 알려줘</Text>
+      <Text style={styles.text}>My First Weather App</Text>
+        <Image
+          style={{width:'100%'}}
+          source={require('./img.jpg')}/>
     </View>
-    );
+  );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'flex-end',
-        paddingVertical: 100,
-        paddingHorizontal: 30,
-        backgroundColor: "#FDF6AA",
-    },
+  container: {
+    flex: 1,
+    justifyContent: "flex-end",
+    
+    
+  },
+  text: {
+    color: "#2c2c2c",
+    fontSize: 40
+  },
 
-   text: {
-    color: '#2c2c2c',
-    fontSize: 50,
-   }
 });
