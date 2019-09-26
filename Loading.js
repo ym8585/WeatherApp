@@ -4,21 +4,21 @@ import { StyleSheet, Text, View, StatusBar, Image } from "react-native";
 export default function Loading() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>My First Weather App</Text>
-        <Image
-          style={{width:'100%'}}
-          source={require('./img.jpg')}/>
+        <Text style={styles.text}>
+            My First Weather App
+        </Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+container: {
     flex: 1,
-    justifyContent: "flex-end",
-    
-    
-  },
+    backgroundColor:"white",
+    justifyContent: 'flex-end',
+    alignContent: 'center',
+    paddingEnd : 50
+},
   text: {
     color: "#2c2c2c",
     fontSize: 40
